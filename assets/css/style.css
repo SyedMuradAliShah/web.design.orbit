@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* light theme styles */
+:root {
+  --primary: #184897;
+  --secondary: #000000;
+  --background: #d9d9d95a !important;
+  --text-color: #676767;
+  --gradient:linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.primary-bg {
+  background-color: var(--primary);
+}
+
+.secondary-bg {
+  background-color: var(--secondary);
+}
+
+body {
+  font-family: "Jost", sans-serif !important;
+  background-color: var(--body-background) !important;
+}
+
+.primary-btn {
+  background-color: var(--primary);
+  border: 0;
+  outline: none;
+  border-radius: 100px;
+  transition: 0.4s all;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 500;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.primary-btn:hover {
+  background-color: var(--secondary);
+}
+
+.secondary-btn {
+  background-color: var(--secondary);
+  border: 0;
+  outline: none;
+  border-radius: 100px;
+  transition: 0.4s all;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 500;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.secondary-btn:hover {
+  background-color: #ffffff;
+  color: var(--secondary);
+}
+
+#myHeader {
+  position: relative;
+  color: white;
+  text-align: center;
+  width: 98%;
+  transition: all 0.3s ease;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+#myHeader .buttons .primary-btn {
+  padding: 10px;
+}
+#myHeader .nav-item .nav-link {
+  color: #ffffff;
+  padding: 8px 20px;
+}
+#myHeader .nav-item .active {
+  color: var(--primary);
+  font-weight: 700;
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+#myHeader .dropdown-menu[data-bs-popper] {
+  right: 0 !important;
+  left: inherit !important;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #111;
+}
+
+.login-page {
+  background: var(--gradient);
+  overflow: hidden;
+}
+.login-page form .input-icon {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+}
+.login-page form input {
+  transition: 0.4s all;
+  padding: 12px;
+}
+.login-page form input:focus {
+  box-shadow: 0px 3px 6px var(--secondary);
+  border-color: var(--secondary);
+}
+.login-page .login-social a {
+  padding: 11px 12px 9px 12px;
+  width: 45px;
+  display: inline-block;
+  transition: 0.4s all;
+}
+.login-page .login-social a:hover {
+  background-color: var(--secondary) !important;
+  color: #ffffff !important;
+}
+
+.heading a {
+  transition: 0.4s all;
+}
+.heading a i {
+  transform: rotate(45deg);
+  transition: 0.4s all;
+}
+.heading a:hover i {
+  transform: rotate(90deg);
+}
+
+.hero-sec {
+  background: url("../images/section.webp") no-repeat center/cover;
+  z-index: 1;
+  border-radius: 0px 0px 20px 20px;
+  overflow: hidden;
+}
+.hero-sec::before {
+  background-color: var(--primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.verticals .swiper-wrapper .swiper-slide a {
+  border-radius: 15px;
+}
+.verticals .swiper-wrapper .swiper-slide .green {
+  background-color: rgba(20, 47, 40, 0.1529411765);
+}
+.verticals .swiper-wrapper .swiper-slide .Blood {
+  background-color: rgba(109, 15, 21, 0.1450980392);
+}
+.verticals .swiper-wrapper .swiper-slide .Dutchwhite {
+  background-color: rgba(242, 227, 184, 0.4431372549);
+}
+.verticals .swiper-wrapper .swiper-slide .Deep-space-sparkle {
+  background-color: rgba(65, 92, 101, 0.137254902);
+}
+.verticals .swiper-wrapper .swiper-slide .Pale-silver {
+  background-color: rgba(218, 192, 185, 0.1294117647);
+}
+.verticals .swiper-wrapper .swiper-slide .vertical-img {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.sharper .mysharper a {
+  background-color: var(--background);
+  border-radius: 15px;
+  transition: 0.4s all;
+}
+.sharper .mysharper a:hover {
+  box-shadow: 0px 4px 10px rgb(195, 195, 195);
+  background-color: #ffffff;
+}
+.sharper .mysharper a:hover .sharper-img img {
+  transform: scale(1.2);
+}
+.sharper .mysharper a .sharper-img {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.sharper .mysharper a .sharper-img img {
+  transition: 0.4s all;
+}
+
+.projects .project-tabs button {
+  background-color: var(--background);
+  color: var(--text-color);
+  border-radius: 100px;
+}
+.projects .project-tabs .active {
+  background-color: var(--primary) !important;
+}
+.projects .project-box {
+  transition: 0.4s all;
+}
+.projects .project-box:hover {
+  box-shadow: 0px 4px 10px rgb(195, 195, 195);
+}
+.projects .project-box:hover .project-img img {
+  transform: scale(1.2);
+}
+.projects .project-box .project-img {
+  overflow: hidden;
+}
+.projects .project-box .project-img img {
+  transition: 0.4s all;
+}
+
+.stars i {
+  color: rgb(255, 162, 0);
+}
+
+.institution .institution-box {
+  background-color: var(--primary);
+}
+.institution .institution-box .inst-img {
+  top: 65%;
+}
+
+.resources .blog:hover img {
+  transform: scale(1.2);
+}
+.resources .blog .blog-img img {
+  transition: 0.3s all;
+}
+.resources .fs-5 {
+  color: var(--secondary);
+  transition: 0.3s all;
+}
+.resources .fs-5:hover {
+  color: var(--primary);
+}
+
+footer {
+  background-color: var(--primary);
+  border-radius: 20px 20px 0px 0px;
+}
+footer .links i {
+  transition: 0.4s all;
+}
+footer .links:hover i {
+  padding-right: 5px;
+}
+footer .copyright {
+  background-color: #002665;
+}
+
+.titlesec {
+  background: url("../images/title-bg.png") no-repeat center/cover;
+  z-index: 1;
+  border-radius: 0px 0px 20px 20px;
+  overflow: hidden;
+}
+.titlesec::before {
+  background-color: var(--primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.search .search-form {
+  background-color: var(--background);
+  width: -moz-max-content;
+  width: max-content;
+}
+.search .search-form .srch-box {
+  width: 250px;
+}
+.search .search-form .srch-box .input-icon {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0%, -50%);
+}
+.search .search-form .srch-box .input-sec {
+  padding: 10px;
+  transition: 0.3s all;
+  border-color: #aaa;
+}
+.search .search-form .srch-box .input-sec:focus {
+  box-shadow: 0px 4px 10px rgb(195, 195, 195);
+  border-color: var(--primary);
+}
+.search .search-form .select-box {
+  width: 150px;
+}
+.search .search-form .select-box .select2-container .select2-selection--single {
+  height: 45px;
+}
+.search .search-form .select-box .select2-container .select2-selection__rendered {
+  line-height: 45px;
+}
+.search .search-form .select-box .select2-container .select2-selection__arrow {
+  height: 45px;
+}
+
+.vertical-category a {
+  color: var(--text-color);
+  font-weight: 600;
+  position: relative;
+  padding: 0px 0px 0px 20px;
+  transition: 0.4s all;
+}
+.vertical-category a:hover {
+  color: var(--primary);
+  padding: 0px 0px 0px 25px;
+}
+.vertical-category a:hover::before {
+  background-color: var(--primary);
+  width: 20px;
+}
+.vertical-category a::before {
+  position: absolute;
+  content: "";
+  background-color: var(--text-color);
+  height: 3px;
+  width: 15px;
+  left: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  transition: 0.4s all;
+}
+
+.projects-page .project-box {
+  transition: 0.4s all;
+}
+.projects-page .project-box:hover {
+  box-shadow: 0px 4px 10px rgb(195, 195, 195);
+}
+.projects-page .project-box .project-img {
+  max-height: 240px;
+}
+
+.project-details li {
+  color: var(--text-color);
+}
+
+.side-box {
+  background-color: var(--background);
+}
+.side-box .profile {
+  width: 130px;
+  height: 130px;
+}
+.side-box .profile img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.side-box .media a {
+  color: var(--primary);
+  transition: 0.4s all;
+}
+.side-box .media a:hover {
+  color: var(--secondary);
+}
+.side-box h5 {
+  background-color: var(--primary);
+}/*# sourceMappingURL=style.css.map */
