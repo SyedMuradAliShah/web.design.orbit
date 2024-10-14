@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* light theme styles */
+:root {
+    --primary: #184897;
+    --secondary: #000000;
+    --background: #d9d9d95a !important;
+    --text-color: #676767; // Assuming you wanted black text for light 
+    --gradient:linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    --bg-color:#EEF1F9;
+
+}
+.primary-bg{
+    background-color: var(--primary);
+}
+.secondary-bg{
+    background-color: var(--secondary);
+}
+.primary{
+    color: var(--primary);
+}
+.purple{
+    color: #846CF9;
+}
+.purple-bg{
+    background-color: #836cf912;
+}
+.green{
+    color: #6CF993;
+}
+.green-bg{
+    background-color: #6cf9940f;
+}
+.red{
+    color: #F96C6C;
+}
+.red-bg{
+    background-color: #f96c6c0e;
+}
+body {
+    font-family: "Jost", sans-serif !important;
+    background-color: var(--bg-color) !important;
+}
+.primary-btn {
+    background-color: var(--primary);
+    border: 0;
+    outline: none;
+    border-radius: 100px;
+    transition: 0.4s all;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 500;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    &:hover {
+        background-color: var(--secondary);
+    }
+}
+.secondary-btn {
+    background-color: var(--secondary);
+    border: 0;
+    outline: none;
+    border-radius: 100px;
+    transition: 0.4s all;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 500;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    &:hover {
+        background-color: #ffffff;
+        color: var(--secondary);
+    }
+}
+
+
+
+ /* Navbar styles */
+ .navbar {
+    background-color: #ffffff;
+    color: white;
+    padding: 1rem !important;
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    transition: transform 0.3s ease;
+    display: block !important;
+    border-radius: 0px 20px 20px 0px;
+    a {
+        color: var(--text-color);
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: 500;
+        margin-bottom: 10px;
+        i{
+            margin-right: 5px;
+        }
+        &:hover {
+            background-color: var(--bg-color);
+        }
+    }
+    .active{
+        background: var(--gradient);
+        color: #ffffff;
+        border-radius: 5px;
+    }
+    .closebtn {
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: block;
+        text-align: right;
+    }
+    .dropdown{
+        .show{
+            background-color: var(--bg-color);
+            a{
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+/* Close button style */
+
+
+/* Main content */
+.main-content {
+    margin-left: 250px;
+    padding: 1rem;
+    transition: margin-left 0.3s ease;
+    /* Toggle Button */
+.toggle-btn {
+    color: var(--text-color);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: left 0.3s ease;
+    background-color: transparent;
+}
+}
+
+
+
+/* Navbar hidden by default on mobile */
+.navbar.hide {
+    transform: translateX(-100%);
+}
+
+/* Toggle Button adjustments when the navbar is hidden */
+.toggle-btn.nav-hidden {
+    left: 10px; /* Align with the edge of the screen */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        transform: translateX(-100%); /* hide by default */
+        width: 200px; /* smaller navbar on mobile */
+    }
+
+    .navbar.show {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0; /* full-width content by default */
+    }
+
+    .toggle-btn {
+        left: 10px; /* Adjust position for mobile */
+    }
+}
+
+
+.wrapper-content{
+    .dash-profile-info{
+        background: var(--gradient);
+    }
+    .details{
+        .icon{
+            width: max-content;
+        }
+    }
+    .form-control{
+        transition: 0.4s all;
+        &:focus{
+            border-color: var(--primary);
+            box-shadow: 0px 4px 10px rgb(195, 195, 195);
+        }
+        &::placeholder{
+            font-size: 0.8rem;
+        }
+    }
+    .form-select{
+        transition: 0.4s all;
+        font-size: 0.8rem;
+        &:focus{
+            border-color: var(--primary);
+            box-shadow: 0px 4px 10px rgb(195, 195, 195);
+        }
+    }
+    .select2-container .select2-selection--single{
+        height: 37px;
+        .select2-selection__rendered{
+            line-height: 37px;
+        }
+        .select2-selection__arrow{
+            height: 37px;
+        }
+    }
+    // profile-preview
+    .profile-preview{
+        width: max-content;
+        button{
+            z-index: 1;
+            bottom: 0px;
+            right: 5px;
+            font-size: 1.2rem;
+            background-color: var(--primary);
+        }
+    }
+    // profile-preview
+    .myprofile{
+        .nav{
+            .nav-link{
+                color: var(--text-color);
+            }
+            .active{
+                background-color: var(--primary) !important;
+                color: #ffffff !important;
+            }
+        }
+
+    }
+    .img-upload{
+        background-color: rgb(225, 225, 225);
+        border: 2px dashed gray;
+
+    #uploadBtn {
+        background-color: transparent;
+        color: var(--text-color);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.3rem;
+        transition: background-color 0.3s ease;
+        &:hover{
+            opacity: 0.7;
+        }
+      }
+        #imageInput {
+            margin-bottom: 20px;
+          }
+      
+          #preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+      
+            .image-preview {
+              position: relative;
+              width: 100px;
+              height: 100px;
+      
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+              }
+      
+              .close-btn {
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                background-color: red;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                font-size: 12px;
+              }
+            }
+        }
+
+    }
+
+
+      
+}

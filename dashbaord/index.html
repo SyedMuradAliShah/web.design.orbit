@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/select2.min.css" />
+</head>
+<body>
+
+    <!-- Sidebar Navbar -->
+    <nav class="navbar" id="navbar">
+        <i class="fa-solid fa-circle-xmark closebtn d-lg-none" id="closeBtn"></i>
+        <a href="./index.html" class="py-0 mb-4">
+          <img src="./assets/images/logo.png" width="80px" alt="">
+        </a>
+        <a href="#" class="active"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+        <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+        <div class="dropdown">
+          <a class="dropdown-toggle mb-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i> Projects
+          </a>
+        
+          <ul class="dropdown-menu w-100 position-relative border-0 rounded-0 mt-0">
+            <li><a class="dropdown-item small" href="#">My Projects</a></li>
+            <li><a class="dropdown-item small" href="#">Add Projects</a></li>
+          </ul>
+        </div>
+        <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="d-flex justify-content-between align-items-center bg-white rounded-3 py-2 px-4">
+            <div class="d-flex align-items-center gap-4">
+              <!-- Toggle Button -->
+            <button class="toggle-btn" id="toggleBtn">
+              <i class="fas fa-bars"></i>
+          </button>
+          <div>
+            <h1 class="text-capitalize fs-5 primary mb-1">dashbaord</h1>
+            <p class="text-capitalize mb-0 small">dashboard</p>
+          </div>
+            </div>
+            <div class="d-flex gap-4 align-items-center">
+              <div class="dropdown">
+                <button class="border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-bell fs-4"></i>
+                  <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger small">
+                    9
+                  </span>
+                </button>
+                <ul class="dropdown-menu border-0 shadow-sm">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./assets/images/me.jpg" width="40px" class="rounded-circle" alt="">
+                </button>
+                <ul class="dropdown-menu border-0 shadow-sm">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Messages</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+        </header>
+        <section class="wrapper-content mt-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="dash-profile-info p-4 rounded-4">
+                <div class="d-md-flex align-items-center justify-content-between gap-4">
+                  <img src="./assets/images/dash-profile.png" width="100px" alt="">
+                  <div>
+                    <h2 class="text-white">Welcome Back <br>
+                      Sulaiman Khan!</h2>
+                      <p class="small text-white">Global Sharper, Dubia hub</p>
+                      <p class="small text-white mb-1"><span class="fw-bold">Gmail :</span> example@gmail.com</p>
+                      <p class="small text-white mb-0"><span class="fw-bold">Number :</span> (+92)-345-1234567</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 details">
+              <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col mb-4">
+                  <div class="bg-white p-4 rounded-4 text-center">
+                    <div class="purple-bg icon p-4 rounded-circle mx-auto">
+                      <i class="fa-solid fa-group-arrows-rotate purple fs-2 p-1"></i>
+                    </div>
+                    <h6 class="text-capitalize my-3 fw-bold">total projects</h6>
+                    <h4 class="purple fw-bold mb-0">1250</h4>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="bg-white p-4 rounded-4 text-center">
+                    <div class="green-bg icon p-4 rounded-circle mx-auto">
+                      <i class="fa-solid fa-group-arrows-rotate green fs-2 p-1"></i>
+                    </div>
+                    <h6 class="text-capitalize my-3 fw-bold">completed projects</h6>
+                    <h4 class="green fw-bold mb-0">1250</h4>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="bg-white p-4 rounded-4 text-center">
+                    <div class="red-bg icon p-4 rounded-circle mx-auto">
+                      <i class="fa-solid fa-group-arrows-rotate red fs-2 p-1"></i>
+                    </div>
+                    <h6 class="text-capitalize my-3 fw-bold">in progress</h6>
+                    <h4 class="red fw-bold mb-0">1250</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-7 mb-4">
+              <div class="chart-box pt-5 p-3 rounded-4 bg-white shadow-sm h-100">
+                <h5 class="mb-4 text-center fw-bold">Total Projects</h5>
+
+                <div id="chart"></div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="chart-box p-3 bg-white rounded-4 shadow-sm h-100">
+                <h5 class="mb-3 text-center fw-bold">Total Projects</h5>
+                <div id="donutchart"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+
+    <!-- JavaScript for Toggle Button and Close Button -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./assets/javascript/jquery.js"></script>
+    <script src="./assets/javascript/select2.min.js"></script>
+    <script src="./assets/javascript/javascript.js"></script>
+    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".select2").select2({});
+      });
+    </script>
+</body>
+</html>

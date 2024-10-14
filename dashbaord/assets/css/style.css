@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* light theme styles */
+:root {
+  --primary: #184897;
+  --secondary: #000000;
+  --background: #d9d9d95a !important;
+  --text-color: #676767;
+  --gradient:linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  --bg-color:#EEF1F9;
+}
+
+.primary-bg {
+  background-color: var(--primary);
+}
+
+.secondary-bg {
+  background-color: var(--secondary);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.purple {
+  color: #846CF9;
+}
+
+.purple-bg {
+  background-color: rgba(131, 108, 249, 0.0705882353);
+}
+
+.green {
+  color: #6CF993;
+}
+
+.green-bg {
+  background-color: rgba(108, 249, 148, 0.0588235294);
+}
+
+.red {
+  color: #F96C6C;
+}
+
+.red-bg {
+  background-color: rgba(249, 108, 108, 0.0549019608);
+}
+
+body {
+  font-family: "Jost", sans-serif !important;
+  background-color: var(--bg-color) !important;
+}
+
+.primary-btn {
+  background-color: var(--primary);
+  border: 0;
+  outline: none;
+  border-radius: 100px;
+  transition: 0.4s all;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 500;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.primary-btn:hover {
+  background-color: var(--secondary);
+}
+
+.secondary-btn {
+  background-color: var(--secondary);
+  border: 0;
+  outline: none;
+  border-radius: 100px;
+  transition: 0.4s all;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 500;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.secondary-btn:hover {
+  background-color: #ffffff;
+  color: var(--secondary);
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #ffffff;
+  color: white;
+  padding: 1rem !important;
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  transition: transform 0.3s ease;
+  display: block !important;
+  border-radius: 0px 20px 20px 0px;
+}
+.navbar a {
+  color: var(--text-color);
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.navbar a i {
+  margin-right: 5px;
+}
+.navbar a:hover {
+  background-color: var(--bg-color);
+}
+.navbar .active {
+  background: var(--gradient);
+  color: #ffffff;
+  border-radius: 5px;
+}
+.navbar .closebtn {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: block;
+  text-align: right;
+}
+.navbar .dropdown .show {
+  background-color: var(--bg-color);
+}
+.navbar .dropdown .show a {
+  font-weight: 500;
+}
+
+/* Close button style */
+/* Main content */
+.main-content {
+  margin-left: 250px;
+  padding: 1rem;
+  transition: margin-left 0.3s ease;
+  /* Toggle Button */
+}
+.main-content .toggle-btn {
+  color: var(--text-color);
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: left 0.3s ease;
+  background-color: transparent;
+}
+
+/* Navbar hidden by default on mobile */
+.navbar.hide {
+  transform: translateX(-100%);
+}
+
+/* Toggle Button adjustments when the navbar is hidden */
+.toggle-btn.nav-hidden {
+  left: 10px; /* Align with the edge of the screen */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    transform: translateX(-100%); /* hide by default */
+    width: 200px; /* smaller navbar on mobile */
+  }
+  .navbar.show {
+    transform: translateX(0);
+  }
+  .main-content {
+    margin-left: 0; /* full-width content by default */
+  }
+  .toggle-btn {
+    left: 10px; /* Adjust position for mobile */
+  }
+}
+.wrapper-content .dash-profile-info {
+  background: var(--gradient);
+}
+.wrapper-content .details .icon {
+  width: -moz-max-content;
+  width: max-content;
+}
+.wrapper-content .form-control {
+  transition: 0.4s all;
+}
+.wrapper-content .form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0px 4px 10px rgb(195, 195, 195);
+}
+.wrapper-content .form-control::-moz-placeholder {
+  font-size: 0.8rem;
+}
+.wrapper-content .form-control::placeholder {
+  font-size: 0.8rem;
+}
+.wrapper-content .form-select {
+  transition: 0.4s all;
+  font-size: 0.8rem;
+}
+.wrapper-content .form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0px 4px 10px rgb(195, 195, 195);
+}
+.wrapper-content .select2-container .select2-selection--single {
+  height: 37px;
+}
+.wrapper-content .select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 37px;
+}
+.wrapper-content .select2-container .select2-selection--single .select2-selection__arrow {
+  height: 37px;
+}
+.wrapper-content .profile-preview {
+  width: -moz-max-content;
+  width: max-content;
+}
+.wrapper-content .profile-preview button {
+  z-index: 1;
+  bottom: 0px;
+  right: 5px;
+  font-size: 1.2rem;
+  background-color: var(--primary);
+}
+.wrapper-content .myprofile .nav .nav-link {
+  color: var(--text-color);
+}
+.wrapper-content .myprofile .nav .active {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+}
+.wrapper-content .img-upload {
+  background-color: rgb(225, 225, 225);
+  border: 2px dashed gray;
+}
+.wrapper-content .img-upload #uploadBtn {
+  background-color: transparent;
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease;
+}
+.wrapper-content .img-upload #uploadBtn:hover {
+  opacity: 0.7;
+}
+.wrapper-content .img-upload #imageInput {
+  margin-bottom: 20px;
+}
+.wrapper-content .img-upload #preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.wrapper-content .img-upload #preview .image-preview {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.wrapper-content .img-upload #preview .image-preview img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.wrapper-content .img-upload #preview .image-preview .close-btn {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */
