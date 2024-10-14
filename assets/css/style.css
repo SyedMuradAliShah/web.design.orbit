@@ -378,4 +378,48 @@ footer .copyright {
 }
 .side-box h5 {
   background-color: var(--primary);
+}
+
+.all-sharpers .sharper-box {
+  background-color: var(--background);
+  transition: 0.4s all;
+}
+.all-sharpers .sharper-box:hover {
+  box-shadow: 0px 4px 10px rgb(195, 195, 195);
+  background-color: #ffffff;
+}
+.all-sharpers .sharper-box:hover .sharper-img img {
+  transform: scale(1.2);
+}
+.all-sharpers .sharper-box .sharper-img img {
+  transition: 0.4s all;
+}
+
+.contact-page .icon {
+  background-color: var(--primary);
+}
+.contact-page .contact-form {
+  background-color: var(--background);
+}
+.contact-page .contact-form input {
+  transition: 0.4s all;
+}
+.contact-page .contact-form input:focus {
+  border-color: var(--primary);
+  box-shadow: 0px 4px 10px rgb(195, 195, 195);
+}
+
+.sharper-details .sharper-info {
+  background-color: var(--background);
+}
+
+.sharper-projects .nav-pills button {
+  color: var(--text-color);
+  border-radius: 0px;
+}
+.sharper-projects .nav-pills .active {
+  background-color: transparent !important;
+  color: var(--secondary) !important;
+  font-weight: 700;
+  border-bottom: 3px solid var(--secondary);
 }/*# sourceMappingURL=style.css.map */
