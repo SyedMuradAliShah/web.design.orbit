@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/select2.min.css" />
+</head>
+<body>
+
+    <!-- Sidebar Navbar -->
+    <nav class="navbar" id="navbar">
+      <i class="fa-solid fa-circle-xmark closebtn d-lg-none" id="closeBtn"></i>
+      <a href="./index.html" class="py-0 mb-4 dash-logo">
+        <img src="./assets/images/logo.png" width="80px" alt="">
+      </a>
+      <a href="./index.html" class="active"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+      <a href="./profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+      <div class="dropdown">
+        <a class="dropdown-toggle mb-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i> Projects
+        </a>
+      
+        <ul class="dropdown-menu w-100 position-relative border-0 rounded-0 mt-0">
+          <li><a class="dropdown-item small" href="./my-projects.html">My Projects</a></li>
+          <li><a class="dropdown-item small" href="./add-project.html">Add Projects</a></li>
+        </ul>
+      </div>
+      <a href="./message.html"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+  </nav>
+
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="d-flex justify-content-between align-items-center bg-white rounded-3 py-2 px-2 px-lg-4">
+            <div class="d-flex align-items-center gap-4">
+              <!-- Toggle Button -->
+            <button class="toggle-btn" id="toggleBtn">
+              <i class="fas fa-bars"></i>
+          </button>
+          <div>
+            <h1 class="text-capitalize fs-5 primary mb-1">Message</h1>
+            <div class="d-flex align-items-center gap-2">
+              <a href="" class="text-decoration-none text-capitalize small fw-bold text-dark">dashboard</a>  <i class="fa-solid fa-angles-right small"></i>
+              <p class="text-capitalize mb-0 small"> Message</p> 
+            </div>
+          </div>
+            </div>
+            <div class="d-flex gap-4 align-items-center">
+              <div class="dropdown">
+                <button class="border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-bell fs-4"></i>
+                  <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger small">
+                    9
+                  </span>
+                </button>
+                <ul class="dropdown-menu border-0 shadow-sm">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./assets/images/me.jpg" width="40px" class="rounded-circle" alt="">
+                </button>
+                <ul class="dropdown-menu border-0 shadow-sm">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Messages</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+        </header>
+        <section class="wrapper-content mt-5">
+            <div class="bg-white rounded-4 shadow-sm overflow-hidden message-page">
+                <div class="row border-bottom">
+                    <div class="col-lg-3 pe-0">
+                      <div class="border-end chatsharper-side">
+                        <h6 class="p-3 fw-bold">Recent Messages</h6>
+                        <button class="d-flex gap-2 border-0 bg-transparent mb-3 p-2">
+                          <div class="sharp-img rounded-circle overflow-hidden">
+                            <img src="./assets/images/sharper1.webp" width="100%" height="100%" alt="">
+                          </div>
+                          <div class="text-start">
+                            <p class="small fw-bold mb-0 text-capitalize">sharper1</p>
+                            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur...</p>
+                          </div>
+                        </button>
+                        <button class="d-flex gap-2 border-0 bg-transparent mb-3 p-2">
+                          <div class="sharp-img rounded-circle overflow-hidden">
+                            <img src="./assets/images/sharper2.webp" width="100%" height="100%" alt="">
+                          </div>
+                          <div class="text-start">
+                            <p class="small fw-bold mb-0 text-capitalize">sharper2</p>
+                            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur...</p>
+                          </div>
+                        </button>
+                        <button class="d-flex gap-2 border-0 bg-transparent mb-3 p-2 active">
+                          <div class="sharp-img rounded-circle overflow-hidden">
+                            <img src="./assets/images/sharper3.webp" width="100%" height="100%" alt="">
+                          </div>
+                          <div class="text-start">
+                            <p class="small fw-bold mb-0 text-capitalize">sharper3</p>
+                            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur...</p>
+                          </div>
+                        </button>
+                        <button class="d-flex gap-2 border-0 bg-transparent mb-3 p-2">
+                          <div class="sharp-img rounded-circle overflow-hidden">
+                            <img src="./assets/images/sharper4.webp" width="100%" height="100%" alt="">
+                          </div>
+                          <div class="text-start">
+                            <p class="small fw-bold mb-0 text-capitalize">sharper4</p>
+                            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur...</p>
+                          </div>
+                        </button>
+                        <button class="d-flex gap-2 border-0 bg-transparent mb-3 p-2">
+                          <div class="sharp-img rounded-circle overflow-hidden">
+                            <img src="./assets/images/sharper1.webp" width="100%" height="100%" alt="">
+                          </div>
+                          <div class="text-start">
+                            <p class="small fw-bold mb-0 text-capitalize">sharper1</p>
+                            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur...</p>
+                          </div>
+                        </button>
+                      </div>
+                      </div>
+                  <div class="col-lg-7 p-0">
+                    <div class="select-sharper-title px-5 py-2 px-lg-2">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-3">
+                          <div class="img rounded-circle overflow-hidden">
+                            <img src="./assets/images/sharper1.webp" width="100%" height="100%" alt="">
+                          </div>
+                          <p class="fw-bold mb-0 text-white">Kevin Sirait</p>
+                        </div>
+                        <button class="border-0 bg-transparent fs-5 text-white chat-files-btn d-lg-none"><i class="fa-solid fa-paperclip"></i></button>
+                      </div>
+                    </div>
+                    <div class="p-3 chat-section">
+                      <div class="sharper-msg d-flex align-items-start gap-2 mb-4">
+                        <div class="img rounded-circle overflow-hidden">
+                          <img src="./assets/images/sharper1.webp" alt="">
+                        </div>
+                        <div class="text bg-secondary bg-opacity-25 p-3">
+                          <p class="small mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ad vitae aperiam quae blanditiis consectetur earum, voluptates pariatur facere obcaecati.</p>
+                        </div>
+                      </div>
+                      <div class="sharper-reply d-flex align-items-end justify-content-end gap-2 mb-4">
+                        <div class="text p-3">
+                          <p class="small mb-0 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ad vitae aperiam quae blanditiis consectetur earum, voluptates pariatur facere obcaecati.</p>
+                        </div>
+                        <div class="img rounded-circle overflow-hidden">
+                          <img src="./assets/images/sharper2.webp" alt="">
+                        </div>
+                      </div>
+                      <div class="sharper-msg d-flex align-items-start gap-2 mb-4">
+                        <div class="img rounded-circle overflow-hidden">
+                          <img src="./assets/images/sharper1.webp" alt="">
+                        </div>
+                        <div class="text bg-secondary bg-opacity-25 p-3">
+                          <p class="small mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ad vitae aperiam quae blanditiis consectetur earum, voluptates pariatur facere obcaecati.</p>
+                        </div>
+                      </div>
+                      <div class="sharper-reply d-flex align-items-end justify-content-end gap-2 mb-4">
+                        <div class="text p-3">
+                          <p class="small mb-0 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ad vitae aperiam quae blanditiis consectetur earum, voluptates pariatur facere obcaecati.</p>
+                        </div>
+                        <div class="img rounded-circle overflow-hidden">
+                          <img src="./assets/images/sharper2.webp" alt="">
+                        </div>
+                      </div>
+                      <div class="sharper-msg d-flex align-items-start gap-2 mb-4">
+                        <div class="img rounded-circle overflow-hidden">
+                          <img src="./assets/images/sharper1.webp" alt="">
+                        </div>
+                        <div class="text bg-secondary bg-opacity-25 p-3">
+                          <p class="small mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ad vitae aperiam quae blanditiis consectetur earum, voluptates pariatur facere obcaecati.</p>
+                        </div>
+                      </div>
+                      <div class="sharper-reply d-flex align-items-end justify-content-end gap-2 mb-4">
+                        <div class="text p-3">
+                          <p class="small mb-0 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ad vitae aperiam quae blanditiis consectetur earum, voluptates pariatur facere obcaecati.</p>
+                        </div>
+                        <div class="img rounded-circle overflow-hidden">
+                          <img src="./assets/images/sharper2.webp" alt="">
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="col-lg-2 ps-0 d-none d-lg-block">
+                    <div class="chatattachments h-100 bg-secondary bg-opacity-25">
+                      <h6 class="mb-4 fw-bold p-3 border-bottom border-dark d-none d-lg-block">Attachments</h6>
+                      <div class="attachment-items p-3">
+                        <div class="box bg-secondary bg-opacity-25 p-3 rounded-4 mb-3">
+                          <div class="bg-white rounded-4 p-3 text-center">
+                            <i class="fa-solid fa-download fs-5"></i>
+                          </div>
+                          <p class="mt-2 mb-0 small fw-bold">Attachment file</p>
+                        </div>
+                        <div class="box bg-secondary bg-opacity-25 p-3 rounded-4 mb-3">
+                          <div class="bg-white rounded-4 p-3 text-center">
+                            <i class="fa-solid fa-download fs-5"></i>
+                          </div>
+                          <p class="mt-2 mb-0 small fw-bold">Attachment file</p>
+                        </div>
+                        <div class="box bg-secondary bg-opacity-25 p-3 rounded-4 mb-3">
+                          <div class="bg-white rounded-4 p-3 text-center">
+                            <i class="fa-solid fa-download fs-5"></i>
+                          </div>
+                          <p class="mt-2 mb-0 small fw-bold">Attachment file</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                    <!-- Modal -->
+  <div class="modal fade" id="attachmentsModal" tabindex="-1" aria-labelledby="attachmentsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attachmentsModalLabel">Attachments</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="modal-attachments-content">
+            <!-- Attachments will be moved here dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                </div>
+                <div class="p-3">
+                  <div class="mb-3">
+                    <textarea class="form-control border-2" id="Message" rows="5" placeholder="Write Message"></textarea>
+                  </div>
+  <div class="d-flex gap-4 align-items-center">
+    <button class="primary-btn py-2 px-3 rounded-3 small"><i class="fa-solid fa-paper-plane"></i> Send</button>
+    <button class="border-0 bg-transparent fs-5"><i class="fa-solid fa-paperclip"></i></button>
+  </div>              
+                </div>
+              </div>
+        </section>
+    </div>
+
+    <!-- JavaScript for Toggle Button and Close Button -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./assets/javascript/jquery.js"></script>
+    <script src="./assets/javascript/select2.min.js"></script>
+    <script src="./assets/javascript/javascript.js"></script>
+    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".select2").select2({});
+      });
+    </script>
+</body>
+</html>

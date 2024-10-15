@@ -105,6 +105,9 @@ body {
   display: block !important;
   border-radius: 0px 20px 20px 0px;
 }
+.navbar .dash-logo:hover {
+  background-color: transparent !important;
+}
 .navbar a {
   color: var(--text-color);
   display: block;
@@ -125,7 +128,7 @@ body {
   border-radius: 5px;
 }
 .navbar .closebtn {
-  color: white;
+  color: var(--primary);
   font-size: 1.5rem;
   cursor: pointer;
   display: block;
@@ -231,6 +234,7 @@ body {
 }
 .wrapper-content .myprofile .nav .nav-link {
   color: var(--text-color);
+  font-size: 0.9rem;
 }
 .wrapper-content .myprofile .nav .active {
   background-color: var(--primary) !important;
@@ -290,4 +294,160 @@ body {
   align-items: center;
   cursor: pointer;
   font-size: 12px;
+}
+.wrapper-content .my-projects .nav-pills button {
+  color: var(--text-color);
+  border-radius: 0px;
+}
+.wrapper-content .my-projects .nav-pills .active {
+  background-color: transparent !important;
+  color: var(--secondary) !important;
+  font-weight: 700;
+  border-bottom: 3px solid var(--secondary);
+}
+.wrapper-content .my-projects .date p {
+  font-size: 0.75rem;
+}
+.wrapper-content .project-realted-sharper figure {
+  width: 100px;
+  height: 100px;
+}
+.wrapper-content .project-realted-sharper figure img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper-content .project-realted-sharper p {
+  font-size: 0.8rem;
+}
+.wrapper-content #pills-Messages .sharper-msg .img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper-content #pills-Messages .sharper-msg .text {
+  width: 80%;
+}
+.wrapper-content #pills-Messages .attachments {
+  background-color: rgba(128, 128, 128, 0.183);
+}
+.wrapper-content .tasks-items .dot {
+  width: 10px;
+  height: 10px;
+}
+.wrapper-content .tasks-items .dropdown-menu {
+  left: inherit !important;
+}
+.wrapper-content .calendar {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.wrapper-content .calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  background-color: #f1f1f1;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.wrapper-content .day-name {
+  padding: 10px 0;
+}
+.wrapper-content .calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 100px;
+  gap: 1px;
+  background-color: #ddd;
+}
+.wrapper-content .calendar-body .calendar-day {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+}
+.wrapper-content .calendar-body .calendar-day::before {
+  content: attr(data-day);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: #333;
+}
+.wrapper-content .calendar-body .calendar-day .empty {
+  background-color: #f9f9f9;
+}
+.wrapper-content .message-page button {
+  transition: 0.4s all;
+}
+.wrapper-content .message-page button .sharp-img {
+  width: 50px;
+  height: 45px;
+}
+.wrapper-content .message-page button .sharp-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper-content .message-page button:hover {
+  background-color: var(--primary) !important;
+  color: #ffffff;
+}
+.wrapper-content .message-page .active {
+  background-color: var(--primary) !important;
+  color: #ffffff;
+}
+.wrapper-content .message-page .select-sharper-title {
+  background-color: var(--primary);
+}
+.wrapper-content .message-page .select-sharper-title .img {
+  width: 50px;
+  height: 50px;
+}
+.wrapper-content .message-page .chat-section .sharper-msg img {
+  width: 40px;
+  height: 40px;
+}
+.wrapper-content .message-page .chat-section .sharper-msg .text {
+  width: 70%;
+  border-radius: 0px 10px 10px 10px;
+}
+.wrapper-content .message-page .chat-section .sharper-reply img {
+  width: 40px;
+  height: 40px;
+}
+.wrapper-content .message-page .chat-section .sharper-reply .text {
+  width: 70%;
+  border-radius: 10px 10px 0px 10px;
+  background: var(--primary);
+}
+.wrapper-content .chatsharper-side {
+  height: 100%;
+  overflow: auto;
+}
+
+@media (max-width: 991px) {
+  .chatsharper-side {
+    height: 400px !important;
+    overflow: auto;
+  }
+  .main-content header h1 {
+    font-size: 0.9rem !important;
+  }
+  .main-content header .titlelink {
+    font-size: 0.7rem;
+  }
+  .main-content header .fa-angles-right {
+    font-size: 0.6rem;
+  }
+  .main-content header p {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=style.css.map */

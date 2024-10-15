@@ -14,37 +14,38 @@
 
     <!-- Sidebar Navbar -->
     <nav class="navbar" id="navbar">
-        <i class="fa-solid fa-circle-xmark closebtn d-lg-none" id="closeBtn"></i>
-        <a href="./index.html" class="py-0 mb-4">
-          <img src="./assets/images/logo.png" width="80px" alt="">
+      <i class="fa-solid fa-circle-xmark closebtn d-lg-none" id="closeBtn"></i>
+      <a href="./index.html" class="py-0 mb-4 dash-logo">
+        <img src="./assets/images/logo.png" width="80px" alt="">
+      </a>
+      <a href="./index.html" class="active"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+      <a href="./profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+      <div class="dropdown">
+        <a class="dropdown-toggle mb-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i> Projects
         </a>
-        <a href="#"><i class="fa-solid fa-gauge"></i> Dashboard</a>
-        <a href="#" class="active"><i class="fa-solid fa-user"></i> Profile</a>
-        <div class="dropdown">
-          <a class="dropdown-toggle mb-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-gear"></i> Projects
-          </a>
-        
-          <ul class="dropdown-menu w-100 position-relative border-0 rounded-0 mt-0">
-            <li><a class="dropdown-item small" href="#">My Projects</a></li>
-            <li><a class="dropdown-item small" href="#">Add Projects</a></li>
-          </ul>
-        </div>
-        <a href="#"><i class="fa-regular fa-comment-dots"></i> Messages</a>
-    </nav>
+      
+        <ul class="dropdown-menu w-100 position-relative border-0 rounded-0 mt-0">
+          <li><a class="dropdown-item small" href="./my-projects.html">My Projects</a></li>
+          <li><a class="dropdown-item small" href="./add-project.html">Add Projects</a></li>
+        </ul>
+      </div>
+      <a href="./message.html"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+  </nav>
+
 
     <!-- Main Content -->
     <div class="main-content">
-        <header class="d-flex justify-content-between align-items-center bg-white rounded-3 py-2 px-4">
-            <div class="d-flex align-items-center gap-4">
+        <header class="d-flex justify-content-between align-items-center bg-white rounded-3 py-2 px-2 px-lg-4">
+            <div class="d-flex align-items-center gap-2">
               <!-- Toggle Button -->
-            <button class="toggle-btn" id="toggleBtn">
-              <i class="fas fa-bars"></i>
+            <button class="toggle-btn " id="toggleBtn">
+              <i class="fas fa-bars small"></i>
           </button>
           <div>
             <h1 class="text-capitalize fs-5 primary mb-1">dashbaord</h1>
             <div class="d-flex align-items-center gap-2">
-              <a href="" class="text-decoration-none text-capitalize small fw-bold text-dark">dashboard</a>  <i class="fa-solid fa-angles-right small"></i>
+              <a href="" class="text-decoration-none text-capitalize small fw-bold text-dark titlelink">dashboard</a>  <i class="fa-solid fa-angles-right small"></i>
               <p class="text-capitalize mb-0 small"> Profile</p>
             </div>
           </div>
@@ -84,20 +85,20 @@
           </div>
           <div class="myprofile">
             <div class="row">
-              <div class="col-md-3">
-                <div class="nav flex-column nav-pills me-3 bg-white shadow-sm rounded-4 p-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                  <button class="nav-link text-start px-5 " id="v-pills-Profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Profile" type="button" role="tab" aria-controls="v-pills-Profile" aria-selected="true"><i class="fa-solid fa-user me-2"></i> My Profile</button>
-                  <button class="nav-link text-start px-5" id="v-pills-Education-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Education" type="button" role="tab" aria-controls="v-pills-Education" aria-selected="false"><i class="fa-solid fa-graduation-cap me-2"></i> Education</button>
-                  <button class="nav-link text-start px-5 " id="v-pills-Experience-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Experience" type="button" role="tab" aria-controls="v-pills-Experience" aria-selected="false"><i class="fa-solid fa-certificate me-2"></i> Experience</button>
-                  <button class="nav-link text-start px-5 active" id="v-pills-Skills-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Skills" type="button" role="tab" aria-controls="v-pills-Skills" aria-selected="false"><i class="fa-solid fa-list-check me-2"></i> Skills</button>
+              <div class="col-md-3 mb-4">
+                <div class="nav flex-column nav-pills me-3 bg-white shadow-sm rounded-4 p-2 p-lg-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link text-start px-2 px-xl-5 active small" id="v-pills-Profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Profile" type="button" role="tab" aria-controls="v-pills-Profile" aria-selected="true"><i class="fa-solid fa-user me-2"></i> My Profile</button>
+                  <button class="nav-link text-start px-2 px-xl-5 small" id="v-pills-Education-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Education" type="button" role="tab" aria-controls="v-pills-Education" aria-selected="false"><i class="fa-solid fa-graduation-cap me-2"></i> Education</button>
+                  <button class="nav-link text-start px-2 px-xl-5 small" id="v-pills-Experience-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Experience" type="button" role="tab" aria-controls="v-pills-Experience" aria-selected="false"><i class="fa-solid fa-certificate me-2"></i> Experience</button>
+                  <button class="nav-link text-start px-2 px-xl-5 small" id="v-pills-Skills-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Skills" type="button" role="tab" aria-controls="v-pills-Skills" aria-selected="false"><i class="fa-solid fa-list-check me-2"></i> Skills</button>
                 </div>
               </div>
               <div class="col-md-9 ps-0">
                 <div class="tab-content bg-white rounded-4 p-3 px-lg-5 py-4" id="v-pills-tabContent">
-                  <div class="tab-pane fade" id="v-pills-Profile" role="tabpanel" aria-labelledby="v-pills-Profile-tab" tabindex="0">
+                  <div class="tab-pane fade  show active" id="v-pills-Profile" role="tabpanel" aria-labelledby="v-pills-Profile-tab" tabindex="0">
                     <h5 class="mb-4 border-bottom pb-2">Basic Destails</h5>
                     <form action="" class="mb-4">
-                      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
                         <div class="col mb-3">
                           <label for="firstname" class="form-label small">First Name</label>
                           <input type="text" class="form-control" id="firstname" placeholder="First Name">
@@ -295,7 +296,7 @@
                   
                     </form>
                   </div>
-                  <div class="tab-pane fade show active" id="v-pills-Skills" role="tabpanel" aria-labelledby="v-pills-Skills-tab" tabindex="0">
+                  <div class="tab-pane fade" id="v-pills-Skills" role="tabpanel" aria-labelledby="v-pills-Skills-tab" tabindex="0">
                     <h5 class="mb-4 border-bottom pb-2">Add Skills</h5>
                     <div class="bg-primary bg-opacity-25 p-3 mb-4 rounded-3 mb-4">
                       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">

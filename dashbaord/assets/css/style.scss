@@ -95,6 +95,11 @@ body {
     transition: transform 0.3s ease;
     display: block !important;
     border-radius: 0px 20px 20px 0px;
+    .dash-logo{
+        &:hover{
+            background-color: transparent !important;;
+        }
+    }
     a {
         color: var(--text-color);
         display: block;
@@ -115,7 +120,7 @@ body {
         border-radius: 5px;
     }
     .closebtn {
-        color: white;
+        color: var(--primary);
         font-size: 1.5rem;
         cursor: pointer;
         display: block;
@@ -235,6 +240,7 @@ body {
         .nav{
             .nav-link{
                 color: var(--text-color);
+                font-size: 0.9rem;
             }
             .active{
                 background-color: var(--primary) !important;
@@ -304,6 +310,188 @@ body {
 
     }
 
-
-      
+    .my-projects{
+        .nav-pills{
+            button{
+                color: var(--text-color);
+                border-radius: 0px;
+            }
+            .active{
+                background-color: transparent !important;
+                color: var(--secondary) !important;
+                font-weight: 700;
+                border-bottom: 3px solid var(--secondary);
+            }
+        }
+    }
+    .my-projects{
+        .date{
+            p{
+                font-size: 0.75rem;
+            }
+        }
+    }
+    .project-realted-sharper{
+        figure{
+            width: 100px;
+            height: 100px;
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    }
+    #pills-Messages{
+        .sharper-msg{
+            .img{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+            }
+            .text{
+                width: 80%;
+            }
+        }
+        .attachments{
+            background-color: rgba(128, 128, 128, 0.183);
+        }
+    }
+.tasks-items{
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+    .dropdown-menu{
+        left: inherit !important;
+    }
 }
+    .calendar {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
+      }
+      
+      .calendar-header {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        text-align: center;
+        background-color: #f1f1f1;
+        font-weight: bold;
+        padding: 10px 0;
+      }
+      
+      .day-name {
+        padding: 10px 0;
+      }
+      
+      .calendar-body {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-auto-rows: 100px;
+        gap: 1px;
+        background-color: #ddd;
+        .calendar-day {
+            background-color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-weight: bold;
+            font-size: 18px;
+            position: relative;
+            &::before {
+                content: attr(data-day);
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                font-size: 18px;
+                color: #333;
+              }
+            .empty {
+                background-color: #f9f9f9;
+              }
+          }
+      }
+      .message-page{
+        button{
+            transition: 0.4s all;
+            .sharp-img{
+                width: 50px;
+                height: 45px;
+                img{
+                    object-fit: cover;
+                }
+            }
+            &:hover{
+                background-color: var(--primary) !important;
+                color: #ffffff;
+            }
+        }
+        .active{
+            background-color: var(--primary) !important;
+            color: #ffffff;
+        }
+        .select-sharper-title{
+            background-color: var(--primary);
+            .img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .chat-section{
+            .sharper-msg{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+                .text{
+                    width: 70%;
+                    border-radius: 0px 10px 10px 10px;
+                }
+            }
+            .sharper-reply{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+                .text{
+                    width: 70%;
+                    border-radius: 10px 10px 0px 10px;
+                    background: var(--primary);
+                }
+            }
+        }
+      }
+      .chatsharper-side{
+        height: 100%;
+        overflow: auto;
+      }
+}
+@media(max-width: 991px){
+    .chatsharper-side{
+        height: 400px !important;
+        overflow: auto;
+    }
+    .main-content{
+        header{
+            h1{
+                font-size: 0.9rem !important;
+            }
+            .titlelink{
+                font-size: 0.7rem;
+            }
+            .fa-angles-right{
+                font-size: 0.6rem;
+            }
+            p{
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+

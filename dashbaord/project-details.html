@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project detail</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/select2.min.css" />
+</head>
+<body>
+
+    <!-- Sidebar Navbar -->
+    <nav class="navbar" id="navbar">
+      <i class="fa-solid fa-circle-xmark closebtn d-lg-none" id="closeBtn"></i>
+      <a href="./index.html" class="py-0 mb-4 dash-logo">
+        <img src="./assets/images/logo.png" width="80px" alt="">
+      </a>
+      <a href="./index.html" class="active"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+      <a href="./profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+      <div class="dropdown">
+        <a class="dropdown-toggle mb-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i> Projects
+        </a>
+      
+        <ul class="dropdown-menu w-100 position-relative border-0 rounded-0 mt-0">
+          <li><a class="dropdown-item small" href="./my-projects.html">My Projects</a></li>
+          <li><a class="dropdown-item small" href="./add-project.html">Add Projects</a></li>
+        </ul>
+      </div>
+      <a href="./message.html"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+  </nav>
+
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header class="d-flex justify-content-between align-items-center bg-white rounded-3 py-2 px-2 px-lg-4">
+        <div class="d-flex align-items-center gap-2">
+          <!-- Toggle Button -->
+        <button class="toggle-btn " id="toggleBtn">
+          <i class="fas fa-bars small"></i>
+      </button>
+      <div>
+        <h1 class="text-capitalize fs-5 primary mb-1">dashbaord</h1>
+        <div class="d-flex align-items-center gap-2">
+          <a href="" class="text-decoration-none text-capitalize small fw-bold text-dark titlelink">dashboard</a>  <i class="fa-solid fa-angles-right small"></i>
+          <p class="text-capitalize mb-0 small"> Project Details</p>
+        </div>
+      </div>
+        </div>
+        <div class="d-flex gap-4 align-items-center">
+          <div class="dropdown">
+            <button class="border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bell fs-4"></i>
+              <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger small">
+                9
+              </span>
+            </button>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./assets/images/me.jpg" width="40px" class="rounded-circle" alt="">
+            </button>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Messages</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+    </header>
+        <section class="wrapper-content mt-5">
+                      <!-- ----------------------------------projects---------------------------------- -->
+           
+     <section class="my-projects mt-5">
+        <ul class="nav nav-pills mb-5 border-bottom" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link p-2 px-md-4 active" id="pills-Details-tab" data-bs-toggle="pill" data-bs-target="#pills-Details" type="button" role="tab" aria-controls="pills-Details" aria-selected="true">Project Details</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link p-2 px-md-4" id="pills-Messages-tab" data-bs-toggle="pill" data-bs-target="#pills-Messages" type="button" role="tab" aria-controls="pills-Messages" aria-selected="false">Messages</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link p-2 px-md-4" id="pills-Timeline-tab" data-bs-toggle="pill" data-bs-target="#pills-Timeline" type="button" role="tab" aria-controls="pills-Timeline" aria-selected="false">Timeline</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-Details" role="tabpanel" aria-labelledby="pills-Details-tab" tabindex="0">
+          <div class="row">
+            <div class="col-lg-8 mb-4">
+              <div class="dash-pro-details bg-white rounded-4 p-4">
+                <div class="img rounded-4 overflow-hidden">
+                  <img src="./assets/images/project-detail.png" width="100%" alt="">
+                </div>
+                <h4 class="mt-4 fw-bold">Workload Company Profile Websites Development</h4>
+                <p class="small">Created by Tommy Hank on June 31, 2020</p>
+                <div class="d-md-flex align-items-center gap-4">
+                  <a href="" class="text-decoration-none d-inline-block bg-primary bg-opacity-25 text-primary fw-bold px-3 py-2 rounded-3">Public</a>
+                  <a href="" class="text-decoration-none d-inline-block border text-secondary px-3 py-2 rounded-3">Edit</a>
+                </div>
+                <div class="d-md-flex align-items-center gap-5 mt-4">
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa-regular fa-clock fs-3 text-primary"></i>
+                    <div>
+                      <p class="fw-bold mb-1">Project Create</p>
+                      <p class="small mb-0">August 07, 2023</p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-2 align-items-center">
+                    <i class="fa-regular fa-clock fs-3 text-primary"></i>
+                    <div>
+                      <p class="fw-bold mb-1">Due Date</p>
+                      <p class="small mb-0">August 07, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4 border-top pt-3">
+                  <p class="small">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. At laudantium commodi repellat, deleniti quis culpa perferendis corporis iure quo iusto a, dolorem laboriosam consequatur dolorum ullam amet. Vitae aliquam earum iste dolorem iure quo illo optio a obcaecati fugiat animi, eos soluta nesciunt natus sapiente, laboriosam repellendus eaque beatae cumque consectetur magni ipsam eius facilis? Esse totam, reprehenderit quas veritatis voluptatibus quis aspernatur. Ipsum, alias qui tempore officiis porro repellendus?
+                  </p>
+                  <p class="small mb-0">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. At laudantium commodi repellat, deleniti quis culpa perferendis corporis iure quo iusto a, dolorem laboriosam consequatur dolorum ullam amet. Vitae aliquam earum iste dolorem iure quo illo optio a obcaecati fugiat animi, eos soluta nesciunt natus sapiente, laboriosam repellendus eaque beatae cumque consectetur magni ipsam eius facilis? Esse totam, reprehenderit quas veritatis voluptatibus quis aspernatur. Ipsum, alias qui tempore officiis porro repellendus?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="bg-white rounded-4 p-3 shadow-sm project-realted-sharper">
+                <h4 class="mb-4 fw-bold">Related Sharpers</h4>
+                <div class="row row-cols-1 row-cols-md-2">
+                  <div class="col mb-4">
+                    <figure class=" rounded-circle overflow-hidden">
+                      <img src="./assets/images/sharper1.webp" width="100%" alt="">
+                    </figure>
+                    <h6 class="mb-0">Lisa Johnson</h6>
+                    <p class="small ">Global Sharper, Dubia hub</p>
+                    <button class="primary-btn rounded-3 py-2 px-3 small">Invite</button>
+                  </div>
+                  <div class="col mb-4">
+                    <figure class=" rounded-circle overflow-hidden">
+                      <img src="./assets/images/sharper1.webp" width="100%" alt="">
+                    </figure>
+                    <h6 class="mb-0">Lisa Johnson</h6>
+                    <p class="small ">Global Sharper, Dubia hub</p>
+                    <button class="primary-btn rounded-3 py-2 px-3 small">Invite</button>
+                  </div>
+                  <div class="col mb-4">
+                    <figure class=" rounded-circle overflow-hidden">
+                      <img src="./assets/images/sharper1.webp" width="100%" alt="">
+                    </figure>
+                    <h6 class="mb-0">Lisa Johnson</h6>
+                    <p class="small ">Global Sharper, Dubia hub</p>
+                    <button class="primary-btn rounded-3 py-2 px-3 small">Invite</button>
+                  </div>
+                  <div class="col mb-4">
+                    <figure class=" rounded-circle overflow-hidden">
+                      <img src="./assets/images/sharper1.webp" width="100%" alt="">
+                    </figure>
+                    <h6 class="mb-0">Lisa Johnson</h6>
+                    <p class="small ">Global Sharper, Dubia hub</p>
+                    <button class="primary-btn rounded-3 py-2 px-3 small">Invite</button>
+                  </div>
+                  <div class="col mb-4">
+                    <figure class=" rounded-circle overflow-hidden">
+                      <img src="./assets/images/sharper1.webp" width="100%" alt="">
+                    </figure>
+                    <h6 class="mb-0">Lisa Johnson</h6>
+                    <p class="small ">Global Sharper, Dubia hub</p>
+                    <button class="primary-btn rounded-3 py-2 px-3 small">Invite</button>
+                  </div>
+                  <div class="col mb-4">
+                    <figure class=" rounded-circle overflow-hidden">
+                      <img src="./assets/images/sharper1.webp" width="100%" alt="">
+                    </figure>
+                    <h6 class="mb-0">Lisa Johnson</h6>
+                    <p class="small ">Global Sharper, Dubia hub</p>
+                    <button class="primary-btn rounded-3 py-2 px-3 small">Invite</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          </div>
+          <div class="tab-pane fade" id="pills-Messages" role="tabpanel" aria-labelledby="pills-Messages-tab" tabindex="0">
+            <div class="bg-white rounded-4 shadow-sm overflow-hidden">
+              <div class="row border-bottom">
+                <div class="col-md-9">
+                  <div class=" p-3">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h4 class=" fw-bold">Project Discussion</h4>
+                    <button class="border-0 bg-transparent fs-5 text-dark chat-files-btn d-lg-none"><i class="fa-solid fa-paperclip"></i></button>
+                    
+                    </div>
+                    <div class="sharper-msg d-flex align-items-center gap-2 mb-4">
+                      <div class="img rounded-circle overflow-hidden">
+                        <img src="./assets/images/sharper1.webp" width="100%" height="100%" alt="">
+                      </div>
+                      <div class="text">
+                        <h6 class="mb-0 fw-bold">Kevin Sirait</h6>
+                        <p class="small mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, qui.</p>
+                      </div>
+                    </div>
+                    <div class="sharper-msg d-flex align-items-center gap-2 mb-4">
+                      <div class="img rounded-circle overflow-hidden">
+                        <img src="./assets/images/sharper2.webp" width="100%" height="100%" alt="">
+                      </div>
+                      <div class="text">
+                        <h6 class="mb-0 fw-bold">Kevin Sirait</h6>
+                        <p class="small mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, qui.</p>
+                      </div>
+                    </div>
+                    <div class="sharper-msg d-flex align-items-center gap-2 mb-4">
+                      <div class="img rounded-circle overflow-hidden">
+                        <img src="./assets/images/sharper1.webp" width="100%" height="100%" alt="">
+                      </div>
+                      <div class="text">
+                        <h6 class="mb-0 fw-bold">Kevin Sirait</h6>
+                        <p class="small mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, qui.</p>
+                      </div>
+                    </div>
+                    <div class="sharper-msg d-flex align-items-center gap-2 mb-4">
+                      <div class="img rounded-circle overflow-hidden">
+                        <img src="./assets/images/sharper2.webp" width="100%" height="100%" alt="">
+                      </div>
+                      <div class="text">
+                        <h6 class="mb-0 fw-bold">Kevin Sirait</h6>
+                        <p class="small mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, qui.</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-3 ps-0 d-none d-lg-block">
+                  <div class="chatattachments h-100 bg-secondary bg-opacity-25">
+                    <h6 class="mb-4 fw-bold p-3 border-bottom border-dark d-none d-lg-block">Attachments</h6>
+                    <div class="attachment-items p-3">
+                      <div class="box bg-secondary bg-opacity-25 p-3 rounded-4 mb-3">
+                        <div class="bg-white rounded-4 p-3 text-center">
+                          <i class="fa-solid fa-download fs-5"></i>
+                        </div>
+                        <p class="mt-2 mb-0 small fw-bold">Attachment file</p>
+                      </div>
+                      <div class="box bg-secondary bg-opacity-25 p-3 rounded-4 mb-3">
+                        <div class="bg-white rounded-4 p-3 text-center">
+                          <i class="fa-solid fa-download fs-5"></i>
+                        </div>
+                        <p class="mt-2 mb-0 small fw-bold">Attachment file</p>
+                      </div>
+                      <div class="box bg-secondary bg-opacity-25 p-3 rounded-4 mb-3">
+                        <div class="bg-white rounded-4 p-3 text-center">
+                          <i class="fa-solid fa-download fs-5"></i>
+                        </div>
+                        <p class="mt-2 mb-0 small fw-bold">Attachment file</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Modal -->
+  <div class="modal fade" id="attachmentsModal" tabindex="-1" aria-labelledby="attachmentsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attachmentsModalLabel">Attachments</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="modal-attachments-content">
+            <!-- Attachments will be moved here dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+              </div>
+              <div class="p-3">
+                <div class="mb-3">
+                  <textarea class="form-control border-2" id="Message" rows="5" placeholder="Write Message"></textarea>
+                </div>
+<div class="d-flex gap-4 align-items-center">
+  <button class="primary-btn py-2 px-3 rounded-3 small"><i class="fa-solid fa-paper-plane"></i> Send</button>
+  <button class="border-0 bg-transparent fs-5"><i class="fa-solid fa-paperclip"></i></button>
+</div>              
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-Timeline" role="tabpanel" aria-labelledby="pills-Timeline-tab" tabindex="0">
+           <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="bg-white shadow-sm rounded-4 p-3 tasks-items">
+                <div class="container my-5">
+                  <!-- Task 1 -->
+                  <div class="bg-success bg-opacity-25 rounded-3 p-2 mb-3">
+                    <div class="mb-2 success-box bg-success p-3 rounded-3 d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="dot bg-white rounded-circle"></div>
+                        <h6 class="mb-0 fw-bold text-white">Task 1</h6>
+                      </div>
+                      <div class="dropdown">
+                        <button class="border-0 bg-transparent text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu end-0 shadow-sm border-0">
+                          <li><a class="dropdown-item small add-subtask" href="#" data-form-id="subTaskForm1">Add Sub Task</a></li>
+                          <li><a class="dropdown-item small" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="subtask-item-container" id="subtaskItems1"></div>
+              
+                    <!-- Subtask input form -->
+                    <div class="subtask d-none" id="subTaskForm1">
+                      <input type="text" class="form-control" id="subTaskInput1" placeholder="Add Sub Task">
+                      <button class="primary-btn py-2 px-3 mt-2 rounded-3 small add-subtask-btn" data-input-id="subTaskInput1" data-container-id="subtaskItems1" data-color="success">Add</button>
+                    </div>
+                  </div>
+              
+                  <!-- Task 2 -->
+                  <div class="bg-warning bg-opacity-25 rounded-3 p-2 mb-3">
+                    <div class="mb-2 success-box bg-warning p-3 rounded-3 d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="dot bg-white rounded-circle"></div>
+                        <h6 class="mb-0 fw-bold text-white">Task 2</h6>
+                      </div>
+                      <div class="dropdown">
+                        <button class="border-0 bg-transparent text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu end-0 shadow-sm border-0">
+                          <li><a class="dropdown-item small add-subtask" href="#" data-form-id="subTaskForm2">Add Sub Task</a></li>
+                          <li><a class="dropdown-item small" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="subtask-item-container" id="subtaskItems2"></div>
+              
+                    <!-- Subtask input form -->
+                    <div class="subtask d-none" id="subTaskForm2">
+                      <input type="text" class="form-control" id="subTaskInput2" placeholder="Add Sub Task">
+                      <button class="primary-btn py-2 px-3 mt-2 rounded-3 small add-subtask-btn" data-input-id="subTaskInput2" data-container-id="subtaskItems2" data-color="warning">Add</button>
+                    </div>
+                  </div>
+              
+                  <!-- Task 3 -->
+                  <div class="bg-danger bg-opacity-25 rounded-3 p-2 mb-3">
+                    <div class="mb-2 success-box bg-danger p-3 rounded-3 d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="dot bg-white rounded-circle"></div>
+                        <h6 class="mb-0 fw-bold text-white">Task 3</h6>
+                      </div>
+                      <div class="dropdown">
+                        <button class="border-0 bg-transparent text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu end-0 shadow-sm border-0">
+                          <li><a class="dropdown-item small add-subtask" href="#" data-form-id="subTaskForm3">Add Sub Task</a></li>
+                          <li><a class="dropdown-item small" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="subtask-item-container" id="subtaskItems3"></div>
+              
+                    <!-- Subtask input form -->
+                    <div class="subtask d-none" id="subTaskForm3">
+                      <input type="text" class="form-control" id="subTaskInput3" placeholder="Add Sub Task">
+                      <button class="primary-btn py-2 px-3 mt-2 rounded-3 small add-subtask-btn" data-input-id="subTaskInput3" data-container-id="subtaskItems3" data-color="danger">Add</button>
+                    </div>
+                  </div>
+              
+                  <!-- Task 4 -->
+                  <div class="bg-secondary bg-opacity-25 rounded-3 p-2 mb-3">
+                    <div class="mb-2 success-box bg-secondary p-3 rounded-3 d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-2">
+                        <div class="dot bg-white rounded-circle"></div>
+                        <h6 class="mb-0 fw-bold text-white">Task 4</h6>
+                      </div>
+                      <div class="dropdown">
+                        <button class="border-0 bg-transparent text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu end-0 shadow-sm border-0">
+                          <li><a class="dropdown-item small add-subtask" href="#" data-form-id="subTaskForm4">Add Sub Task</a></li>
+                          <li><a class="dropdown-item small" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="subtask-item-container" id="subtaskItems4"></div>
+              
+                    <!-- Subtask input form -->
+                    <div class="subtask d-none" id="subTaskForm4">
+                      <input type="text" class="form-control" id="subTaskInput4" placeholder="Add Sub Task">
+                      <button class="primary-btn py-2 px-3 mt-2 rounded-3 small add-subtask-btn" data-input-id="subTaskInput4" data-container-id="subtaskItems4" data-color="secondary">Add</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Button trigger modal -->
+<button type="button" class="primary-btn rounded-3 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="fa-solid fa-circle-plus"></i> Create Task
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header py-3">
+        <h1 class="modal-title fs-6" id="exampleModalLabel">Create Task</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-3">
+            <input type="text" class="form-control" placeholder="Task Name">
+          </div>
+          <div class="col mb-3">
+            <select name="" id="" class="form-select py-2">
+              <option value="" selected>Select Color</option>
+              <option value="primary">Primary</option>
+              <option value="danger">danger</option>
+              <option value="Warning">Warning</option>
+              <option value="Secondary">Secondary</option>
+            </select>
+          </div>
+          <div class="col mb-3">
+            <input type="text" class="form-control" placeholder="Start Date">
+          </div>
+          <div class="col mb-3">
+            <input type="text" class="form-control" placeholder="End Date">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer py-2">
+        <button type="button" class="primary-btn small rounded-3 px-3 py-2">Create Task</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="bg-white p-3 rounded-4 shadow-sm">
+                <div class="calendar-container">
+                  <div class="calendar">
+                    <div class="calendar-header">
+                      <div class="day-name">SUN</div>
+                      <div class="day-name">MON</div>
+                      <div class="day-name">TUE</div>
+                      <div class="day-name">WED</div>
+                      <div class="day-name">THU</div>
+                      <div class="day-name">FRI</div>
+                      <div class="day-name">SAT</div>
+                    </div>
+                    <div class="calendar-body" id="calendarDays"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+     </section>
+    <!-- ----------------------------------projects---------------------------------- -->
+        </section>
+    </div>
+
+    <!-- JavaScript for Toggle Button and Close Button -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./assets/javascript/jquery.js"></script>
+    <script src="./assets/javascript/select2.min.js"></script>
+    <script src="./assets/javascript/javascript.js"></script>
+    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".select2").select2({});
+      });
+    </script>
+</body>
+</html>

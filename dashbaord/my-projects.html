@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My projects</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/select2.min.css" />
+</head>
+<body>
+
+    <!-- Sidebar Navbar -->
+    <nav class="navbar" id="navbar">
+      <i class="fa-solid fa-circle-xmark closebtn d-lg-none" id="closeBtn"></i>
+      <a href="./index.html" class="py-0 mb-4 dash-logo">
+        <img src="./assets/images/logo.png" width="80px" alt="">
+      </a>
+      <a href="./index.html" class="active"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+      <a href="./profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+      <div class="dropdown">
+        <a class="dropdown-toggle mb-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i> Projects
+        </a>
+      
+        <ul class="dropdown-menu w-100 position-relative border-0 rounded-0 mt-0">
+          <li><a class="dropdown-item small" href="./my-projects.html">My Projects</a></li>
+          <li><a class="dropdown-item small" href="./add-project.html">Add Projects</a></li>
+        </ul>
+      </div>
+      <a href="./message.html"><i class="fa-regular fa-comment-dots"></i> Messages</a>
+  </nav>
+
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header class="d-flex justify-content-between align-items-center bg-white rounded-3 py-2 px-2 px-lg-4">
+        <div class="d-flex align-items-center gap-2">
+          <!-- Toggle Button -->
+        <button class="toggle-btn " id="toggleBtn">
+          <i class="fas fa-bars small"></i>
+      </button>
+      <div>
+        <h1 class="text-capitalize fs-5 primary mb-1">dashbaord</h1>
+        <div class="d-flex align-items-center gap-2">
+          <a href="" class="text-decoration-none text-capitalize small fw-bold text-dark titlelink">dashboard</a>  <i class="fa-solid fa-angles-right small"></i>
+          <p class="text-capitalize mb-0 small"> My Projects</p>
+        </div>
+      </div>
+        </div>
+        <div class="d-flex gap-4 align-items-center">
+          <div class="dropdown">
+            <button class="border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bell fs-4"></i>
+              <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger small">
+                9
+              </span>
+            </button>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./assets/images/me.jpg" width="40px" class="rounded-circle" alt="">
+            </button>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Messages</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+    </header>
+        <section class="wrapper-content mt-5">
+                      <!-- ----------------------------------projects---------------------------------- -->
+           
+     <section class="my-projects mt-5">
+        <ul class="nav nav-pills mb-5 border-bottom" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link px-2 px-md-4 active" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="true">All Projects</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link px-2 px-md-4" id="pills-Process-tab" data-bs-toggle="pill" data-bs-target="#pills-Process" type="button" role="tab" aria-controls="pills-Process" aria-selected="false">In Process</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link px-2 px-md-4" id="pills-Completed-tab" data-bs-toggle="pill" data-bs-target="#pills-Completed" type="button" role="tab" aria-controls="pills-Completed" aria-selected="false">Completed</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">
+          <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
+          <div class="col mb-4">
+            <div class="bg-white rounded-4 shadow-sm p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                <div class="btn-group " role="group" aria-label="Basic outlined example">
+                  <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                  <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <figure class="mb-0">
+                    <div class="project-img rounded-3 overflow-hidden">
+                      <a href="./project-details.html">
+                        <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                      </a>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-8 ps-0">
+                  <p class="small mb-2 mt-0">
+                    Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                    <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="bg-white rounded-4 shadow-sm p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                <div class="btn-group " role="group" aria-label="Basic outlined example">
+                  <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                  <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <figure class="mb-0">
+                    <div class="project-img rounded-3 overflow-hidden">
+                      <a href="./project-details.html">
+                        <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                      </a>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-8 ps-0">
+                  <p class="small mb-2 mt-0">
+                    Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                    <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="bg-white rounded-4 shadow-sm p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                <div class="btn-group " role="group" aria-label="Basic outlined example">
+                  <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                  <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <figure class="mb-0">
+                    <div class="project-img rounded-3 overflow-hidden">
+                      <a href="./project-details.html">
+                        <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                      </a>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-8 ps-0">
+                  <p class="small mb-2 mt-0">
+                    Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                    <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="bg-white rounded-4 shadow-sm p-3">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                <div class="btn-group " role="group" aria-label="Basic outlined example">
+                  <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                  <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <figure class="mb-0">
+                    <div class="project-img rounded-3 overflow-hidden">
+                      <a href="./project-details.html">
+                        <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                      </a>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-8 ps-0">
+                  <p class="small mb-2 mt-0">
+                    Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                  </p>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                    <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+          <div class="tab-pane fade" id="pills-Process" role="tabpanel" aria-labelledby="pills-Process-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
+              <div class="col mb-4">
+                <div class="bg-white rounded-4 shadow-sm p-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                    <div class="btn-group " role="group" aria-label="Basic outlined example">
+                      <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                      <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <figure class="mb-0">
+                        <div class="project-img rounded-3 overflow-hidden">
+                          <a href="./project-details.html">
+                            <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                          </a>
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="col-md-8 ps-0">
+                      <p class="small mb-2 mt-0">
+                        Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                        <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                    <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                    <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="bg-white rounded-4 shadow-sm p-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                    <div class="btn-group " role="group" aria-label="Basic outlined example">
+                      <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                      <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <figure class="mb-0">
+                        <div class="project-img rounded-3 overflow-hidden">
+                          <a href="./project-details.html">
+                            <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                          </a>
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="col-md-8 ps-0">
+                      <p class="small mb-2 mt-0">
+                        Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                        <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                    <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                    <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="bg-white rounded-4 shadow-sm p-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                    <div class="btn-group " role="group" aria-label="Basic outlined example">
+                      <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                      <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <figure class="mb-0">
+                        <div class="project-img rounded-3 overflow-hidden">
+                          <a href="./project-details.html">
+                            <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                          </a>
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="col-md-8 ps-0">
+                      <p class="small mb-2 mt-0">
+                        Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                        <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                    <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                    <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="bg-white rounded-4 shadow-sm p-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                    <div class="btn-group " role="group" aria-label="Basic outlined example">
+                      <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                      <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <figure class="mb-0">
+                        <div class="project-img rounded-3 overflow-hidden">
+                          <a href="./project-details.html">
+                            <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                          </a>
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="col-md-8 ps-0">
+                      <p class="small mb-2 mt-0">
+                        Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                        <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                    <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                    <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-Completed" role="tabpanel" aria-labelledby="pills-Completed-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
+              <div class="col mb-4">
+                <div class="bg-white rounded-4 shadow-sm p-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                    <div class="btn-group " role="group" aria-label="Basic outlined example">
+                      <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                      <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <figure class="mb-0">
+                        <div class="project-img rounded-3 overflow-hidden">
+                          <a href="./project-details.html">
+                            <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                          </a>
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="col-md-8 ps-0">
+                      <p class="small mb-2 mt-0">
+                        Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                        <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                    <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                    <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="bg-white rounded-4 shadow-sm p-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                    <div class="btn-group " role="group" aria-label="Basic outlined example">
+                      <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                      <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <figure class="mb-0">
+                        <div class="project-img rounded-3 overflow-hidden">
+                          <a href="./project-details.html">
+                            <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                          </a>
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="col-md-8 ps-0">
+                      <p class="small mb-2 mt-0">
+                        Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                        <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                    <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                    <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="bg-white rounded-4 shadow-sm p-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                    <div class="btn-group " role="group" aria-label="Basic outlined example">
+                      <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                      <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <figure class="mb-0">
+                        <div class="project-img rounded-3 overflow-hidden">
+                          <a href="./project-details.html">
+                            <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                          </a>
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="col-md-8 ps-0">
+                      <p class="small mb-2 mt-0">
+                        Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                        <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                    <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                    <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="bg-white rounded-4 shadow-sm p-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <a href="./project-details.html" class="text-truncate w-100 text-decoration-none fs-6 text-dark fw-bold d-inline-block mb-0">Create a Stunning online pre...</a>
+                    <div class="btn-group " role="group" aria-label="Basic outlined example">
+                      <a href="./add-project.html" type="button" class="btn btn-outline-success small px-2 py-1"><i class="fa-solid fa-pen-to-square small"></i></a>
+                      <button type="button" class="btn btn-outline-danger small px-2 py-1"><i class="fa-solid fa-trash-can small"></i></button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <figure class="mb-0">
+                        <div class="project-img rounded-3 overflow-hidden">
+                          <a href="./project-details.html">
+                            <img src="./assets/images/vertical1.webp" width="100%" alt="">
+                          </a>
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="col-md-8 ps-0">
+                      <p class="small mb-2 mt-0">
+                        Lorem ipsum dolor sit amet consectetur. Rhoncus....
+                      </p>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-0 small"><i class="fa-solid fa-people-group small"></i> Members</p>
+                        <p class="mb-0 small"><i class="fa-solid fa-comment-dots small"></i> 10 Messages</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-md-flex align-items-center justify-content-between border-top mt-3 pt-2 date">
+                    <p class="mb-0 small"><b>Start Date :</b> August 07, 2024</p>
+                    <p class="mb-0 small"><b>End Date :</b> August 07, 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </section>
+    <!-- ----------------------------------projects---------------------------------- -->
+        </section>
+    </div>
+
+    <!-- JavaScript for Toggle Button and Close Button -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./assets/javascript/jquery.js"></script>
+    <script src="./assets/javascript/select2.min.js"></script>
+    <script src="./assets/javascript/javascript.js"></script>
+    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".select2").select2({});
+      });
+    </script>
+</body>
+</html>
