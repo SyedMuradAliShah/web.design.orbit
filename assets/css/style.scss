@@ -96,30 +96,6 @@ body {
     background-color: #111;
   }
 
-  .admin-login {
-    form{
-        .form-control{
-            padding-left: 37px !important;
-        }
-
-        i{
-            left: 15px;
-            bottom: 16%;
-            color: rgb(170, 170, 170);
-            font-size: small;
-        }
-        .eye-icon{
-            right: 15px;
-            bottom: 9% !important;
-            i{
-                cursor: pointer;
-                &:hover{
-                    color: #000000;
-                }
-            }
-        }
-    }
-}
 
 
 

@@ -98,26 +98,6 @@ body {
   background-color: #111;
 }
 
-.admin-login form .form-control {
-  padding-left: 37px !important;
-}
-.admin-login form i {
-  left: 15px;
-  bottom: 16%;
-  color: rgb(170, 170, 170);
-  font-size: small;
-}
-.admin-login form .eye-icon {
-  right: 15px;
-  bottom: 9% !important;
-}
-.admin-login form .eye-icon i {
-  cursor: pointer;
-}
-.admin-login form .eye-icon i:hover {
-  color: #000000;
-}
-
 .login-page {
   background: var(--gradient);
   overflow: hidden;
