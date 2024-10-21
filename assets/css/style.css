@@ -98,6 +98,26 @@ body {
   background-color: #111;
 }
 
+.admin-login form .form-control {
+  padding-left: 37px !important;
+}
+.admin-login form i {
+  left: 15px;
+  bottom: 16%;
+  color: rgb(170, 170, 170);
+  font-size: small;
+}
+.admin-login form .eye-icon {
+  right: 15px;
+  bottom: 9% !important;
+}
+.admin-login form .eye-icon i {
+  cursor: pointer;
+}
+.admin-login form .eye-icon i:hover {
+  color: #000000;
+}
+
 .login-page {
   background: var(--gradient);
   overflow: hidden;
@@ -295,12 +315,12 @@ footer .copyright {
   right: 5%;
   transform: translate(0%, -50%);
 }
-.search .search-form .srch-box .input-sec {
+.search .search-form .input-sec {
   padding: 10px;
   transition: 0.3s all;
   border-color: #aaa;
 }
-.search .search-form .srch-box .input-sec:focus {
+.search .search-form .input-sec:focus {
   box-shadow: 0px 4px 10px rgb(195, 195, 195);
   border-color: var(--primary);
 }
@@ -379,6 +399,20 @@ footer .copyright {
 .side-box h5 {
   background-color: var(--primary);
 }
+.side-box .form-control {
+  transition: 0.4s all;
+  border-color: var(--text-color);
+}
+.side-box .form-control:focus {
+  box-shadow: 0px 3px 6px rgb(218, 218, 218);
+  border-color: var(--secondary);
+}
+.side-box .form-control::-moz-placeholder {
+  font-size: 0.9rem;
+}
+.side-box .form-control::placeholder {
+  font-size: 0.9rem;
+}
 
 .all-sharpers .sharper-box {
   background-color: var(--background);
@@ -411,6 +445,14 @@ footer .copyright {
 
 .sharper-details .sharper-info {
   background-color: var(--background);
+}
+.sharper-details .sharper-profile {
+  width: 200px;
+  height: 200px;
+}
+.sharper-details .sharper-profile img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sharper-projects .nav-pills button {
